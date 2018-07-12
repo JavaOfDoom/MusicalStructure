@@ -7,17 +7,35 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/musicbookshelf"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/musicbookshelf"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/mainChoices"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="#000">
 
        <LinearLayout
            android:layout_width="match_parent"
@@ -27,16 +45,22 @@
            <TextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
+               android:background="#555"
+               style="@style/CategoryStyle"
                android:text="Artists"/>
 
            <TextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
+               style="@style/CategoryStyle"
+               android:background="#555"
                android:text="Albums"/>
 
            <TextView
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
+               style="@style/CategoryStyle"
+               android:background="#555"
                android:text="Songs"/>
 
        </LinearLayout>
