@@ -21,9 +21,9 @@ public class MusicAdapter extends ArrayAdapter<Music> {
     @Override
     public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item
-            , parent, false);
+                    , parent, false);
         }
 
         Music currentMusicInfo = getItem(position);

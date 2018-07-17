@@ -12,10 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Set the onClickListener to navigate to the artists page
         TextView artists = findViewById(R.id.artists);
 
         artists.setOnClickListener(new View.OnClickListener() {
@@ -27,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set the onClickListener to navigate to the albums page
         TextView albums = findViewById(R.id.albums);
 
         albums.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set the onClickListener to navigate to the songs page
         TextView songs = findViewById(R.id.songs);
 
         songs.setOnClickListener(new View.OnClickListener() {
